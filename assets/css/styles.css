@@ -6,13 +6,25 @@
 .nav{
     grid-area: nav;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .categories{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    gap:.5rem;
+    padding: 1rem;
+    font-size: 1.2rem;
 
+}
+
+.amount{
+    color: #c1c1c1;
 }
 
 .aside{
@@ -26,23 +38,39 @@
 
     grid-area: main;
     background-color: red;
+    height:100%;
+    overflow: hidden;
 
 }
 
 .main .gallery{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    height:100%;
+    overflow: auto;
    
 }
 
 .main img{
-    width: 50%;
+    width: 100%;
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    padding: .5rem;
+    text-align:center;
+    gap: .7rem;
 }
 
 .footer{
-
     grid-area: footer;
     background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
