@@ -68,9 +68,9 @@ a:hover {
 }
 
 .aside {
-    background-color: #ebebeb;
-    grid-area: aside;
-    color: rgb(0, 30, 60);
+  background-color: #ebebeb;
+  grid-area: aside;
+  color: rgb(0, 30, 60);
 }
 
 .main {
@@ -290,7 +290,7 @@ a:hover {
   .grid-container {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 5% 18% 80% 5%;
+    grid-template-rows: 5% 14% 76% 5%;
     height: 100vh;
 
     grid-template-areas:
@@ -301,6 +301,38 @@ a:hover {
   }
 
   .aside {
-    margin: 0 5%;
+    margin: 0 1%;
   }
+}
+
+@media only screen and (max-width: 425px){
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 18% 70% 5%;
+    min-height: 100vh;
+    min-width:100vw;
+     overflow-x: hidden;
+
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+  }
+
+  .header h1, i{
+    font-size: 1.2rem
+  }
+
+  .aside{
+    margin: 0;
+  }
+  .categories{
+    font-size: .8rem;
+
+  }
+ 
+
+
 }
