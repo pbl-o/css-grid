@@ -5,9 +5,20 @@
 }
 
 h1{
-    letter-spacing: .9rem;
+    letter-spacing: 1.9rem;
     color: #eee;
 }
+
+i{
+    color:#ddd;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    margin-bottom: .3rem;
+}
+
+
+
+
 
 h2,h3,h4,h5{
     letter-spacing: .4rem;
@@ -24,13 +35,18 @@ a:hover{
     font-size: 1.15rem;
 }
 
-.nav{
-    grid-area: nav;
+.header{
+    grid-area: header;
     background-color:rgb(0 30 60);
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
 
+.header a:hover{
+    opacity: .9;
+    font-size: 1rem;
 }
 
 .categories{
@@ -58,7 +74,7 @@ a:hover{
 }
 
 .aside{
-
+    background-color: #ebebeb;
     grid-area: aside;
 
 
@@ -68,7 +84,7 @@ a:hover{
 .main{
 
     grid-area: main;
- 
+    background-color: #ebebeb;
     height:100%;
     overflow: hidden;
 
@@ -98,9 +114,10 @@ a:hover{
     padding: 1rem;
     text-align:center;
     gap: 1.5rem;
-    border: 1px solid #c1c1c1;
+  
     border-radius: 5px;
     margin: .5rem;
+    background-color: #ffffff9a;
 }
 
 .product-description{
@@ -173,7 +190,7 @@ a:hover{
     grid-template-rows: 5% 90% 5%;
     height: 100vh;
     grid-template-areas: 
-    'nav nav'
+    'header header'
     'aside main'
     'footer footer';
 
@@ -186,6 +203,9 @@ a:hover{
 
 @media (max-width: 1200px){
 
+
+    
+
     .grid-container{
         display: grid;
         grid-template-columns: 20% 80%;
@@ -193,7 +213,7 @@ a:hover{
         height: 100vh;
     
         grid-template-areas: 
-        'nav nav'
+        'header header'
         'aside main'
         'footer footer';
     
@@ -255,7 +275,7 @@ a:hover{
         height: 100vh;
     
         grid-template-areas: 
-        'nav'
+        'header'
         'aside'
         'main'
         'footer';
@@ -302,7 +322,7 @@ a:hover{
         height: 100vh;
     
         grid-template-areas: 
-        'nav'
+        'header'
         'aside'
         'main'
         'footer';
@@ -330,7 +350,7 @@ a:hover{
         height: 100vh;
     
         grid-template-areas: 
-        'nav'
+        'header'
         'aside'
         'main'
         'footer';
