@@ -31,16 +31,13 @@ a {
 
 a:hover {
   opacity: 0.7;
-  color: #333;
 }
 
 a:active{
-    color: #333;
+    color: #bbb;
 }
 
-a:visited{
-    color:pink;
-}
+
 
 .header {
   grid-area: header;
@@ -69,9 +66,7 @@ a:visited{
   letter-spacing: 0.1rem;
 }
 
-.categories li {
-  color: #333;
-}
+
 
 .amount {
   color: #c1c1c1;
@@ -82,7 +77,6 @@ a:visited{
 .aside {
   background-color: #ebebeb;
   grid-area: aside;
-  color: rgb(0, 30, 60);
   color: #333;
 }
 
@@ -169,7 +163,6 @@ a:visited{
   color: #ddd;
   opacity: 0.7;
   filter: brightness(1.1);
-  font-size: 1.05rem;
 }
 
 .footer a:active {
