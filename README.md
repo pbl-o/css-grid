@@ -1,6 +1,6 @@
 # Layout de e-commerce con Grid
 ## Link directo: 
-### 
+### https://pbl-o.github.io/css-grid/
 ### Pablo E. Díaz A.
 
 #### Proceso y Requerimentos:
