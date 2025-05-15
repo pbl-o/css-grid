@@ -3,10 +3,15 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-
+/*global*/
 h1 {
   letter-spacing: 1.9rem;
   color: #eee;
+}
+
+h3
+{
+  letter-spacing: 0.4rem;
 }
 
 i {
@@ -14,13 +19,6 @@ i {
   font-size: 1.6rem;
   padding: 1.5rem;
   margin-bottom: 0.3rem;
-}
-
-h2,
-h3,
-h4,
-h5 {
-  letter-spacing: 0.4rem;
 }
 
 a {
@@ -36,9 +34,20 @@ a:hover {
 a:active{
     color: #bbb;
 }
+/*LAYOUT-----------------------------------------------------------------*/
+/*General*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 14% 86%;
+  grid-template-rows: 5% 90% 5%;
+  height: 100vh;
+  grid-template-areas:
+    "nav nav"
+    "aside main"
+    "footer footer";
+}
 
-
-
+/*Navbar*/
 .navbar {
   grid-area: nav;
   background-color: rgb(0, 30, 60);
@@ -50,6 +59,14 @@ a:active{
 
 .navbar a:hover {
   opacity: 0.9;
+}
+
+/*Aside*/
+
+.aside {
+  background-color: #ebebeb;
+  grid-area: aside;
+  color: #333;
 }
 
 .categories {
@@ -66,20 +83,13 @@ a:active{
   letter-spacing: 0.1rem;
 }
 
-
-
 .amount {
   color: #c1c1c1;
   font-weight: 400;
   letter-spacing: 0.1rem;
 }
 
-.aside {
-  background-color: #ebebeb;
-  grid-area: aside;
-  color: #333;
-}
-
+/*Main*/
 .main {
   grid-area: main;
   background-color: #ebebeb;
@@ -144,6 +154,7 @@ a:active{
   transform: scale(0.99);
 }
 
+/*Footer*/
 .footer {
   grid-area: footer;
   background-color: rgb(0, 30, 60);
@@ -173,16 +184,7 @@ a:active{
   transition: none;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 14% 86%;
-  grid-template-rows: 5% 90% 5%;
-  height: 100vh;
-  grid-template-areas:
-    "nav nav"
-    "aside main"
-    "footer footer";
-}
+/*Media Queries-----------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 1200px) {
   .grid-container {
@@ -219,6 +221,8 @@ a:active{
     overflow: auto;
   }
 }
+
+/*-----------------------------------------------------------------------------------*/
 
 @media (max-width: 900px) {
   .grid-container {
@@ -273,6 +277,8 @@ a:active{
   }
 }
 
+/*-----------------------------------------------------------------------------------*/
+
 @media (max-width: 600px) {
   .grid-container {
     display: grid;
@@ -292,6 +298,8 @@ a:active{
   }
 }
 
+/*-----------------------------------------------------------------------------------*/
+
 @media (max-width: 500px) {
   .grid-container {
     display: grid;
@@ -310,6 +318,8 @@ a:active{
     margin: 0 1%;
   }
 }
+
+/*-----------------------------------------------------------------------------------*/
 
 @media only screen and (max-width: 425px) {
   .grid-container {
